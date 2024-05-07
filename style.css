@@ -10,13 +10,20 @@
 
 .img{
 
-margin-top: 40%;
+margin-top: 30%;
 
+}
+
+img{
+    width: 150px;
 }
 
 .form-control{
 
     border: #967BAC solid 1px;
+}
+.top{
+    margin-top: 10%;
 }
 
 .botao{
@@ -24,3 +31,5 @@ margin-top: 40%;
     margin-top: 10%;
 
 }
+
+body { background-color:#E7D2EC ;}
