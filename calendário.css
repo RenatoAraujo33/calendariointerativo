@@ -16,7 +16,7 @@
   }
   
   body {
-    background: #dfebed;
+    background: hsl(0, 0%, 100%);
     font-family: 'Roboto', sans-serif;
   }
   
@@ -31,7 +31,7 @@
   }
   
   .calendar {
-    background: #2b4450;
+    background: #502b50;
     border-radius: 4px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
     height: 501px;
