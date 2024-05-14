@@ -2,10 +2,13 @@
 
     background-color: #EEB3A3;
     width: 40%;
+    font-size: 20px;
 }
 .btn2{
 
     background-color: #967BAC;
+    color: white;
+    font-size: 20px;
 }
 
 .btn-primary {
