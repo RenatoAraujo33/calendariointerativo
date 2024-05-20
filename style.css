@@ -38,7 +38,7 @@
 }
 .img{ 
 
-margin-top: 30%;
+margin-top: 15%;
 
 }
 
@@ -96,3 +96,5 @@ align-items: center;
 font-size: larger;
 height: 100%;
 }
+
+h2 {text-align: left;}
