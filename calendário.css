@@ -25,19 +25,24 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: start;
+  height: 89%;
+  justify-content: center;
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
 }
+.container-fluid a {
 
+  background-color: #dfebed;
+  color: #0e0101;
+  font-size: 20px;
+}
 .calendar {
   background: #99eb76;
   color: black;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  height: 501px;
+  height: 530px;
   perspective: 1000;
   transition: 0.9s;
   transform-style: preserve-3d;
@@ -229,7 +234,7 @@ textarea {
 a {
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  border-radius: 10rem;
+  border-radius: 10px;
   color: #fff;
   background-color: palevioletred;
   text-transform: uppercase;
@@ -255,4 +260,23 @@ margin-top: 25px;
 .black {
   background-color: #0e0101;
 
+}
+nav {
+
+  position: sticky;
+  bottom: 0;
+}
+
+.tarefas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarefas i {
+  margin-bottom: 5px;
+}
+
+.tarefas span {
+  font-size: 16px;
 }
