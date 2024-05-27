@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: #29465d;
+  background: #EEB3A3;
   font-family: "Roboto", sans-serif;
 }
 
@@ -38,8 +38,8 @@ body {
   font-size: 20px;
 }
 .calendar {
-  background: #99eb76;
-  color: black;
+  background: white;
+  color: white;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   height: 530px;
@@ -265,6 +265,7 @@ nav {
 
   position: sticky;
   bottom: 0;
+
 }
 
 .tarefas {
@@ -278,5 +279,6 @@ nav {
 }
 
 .tarefas span {
-  font-size: 16px;
+  font-size: 10px;
 }
+.navbar {margin-top: 0%;}
