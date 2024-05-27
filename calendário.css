@@ -42,7 +42,7 @@ body {
   color: white;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  height: 530px;
+  height: 596px;
   perspective: 1000;
   transition: 0.9s;
   transform-style: preserve-3d;
@@ -57,7 +57,7 @@ body {
 .current-date {
   border-bottom: 1px solid rgba(73, 114, 133, 0.6);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 30px 40px;
 }
 
@@ -282,3 +282,17 @@ nav {
   font-size: 10px;
 }
 .navbar {margin-top: 0%;}
+
+.btn-primary{
+  background-color: white;
+  color: #0e0101;
+  font-size: 18px;
+  border: white;
+}
+
+.current-month{
+  text-align: center;
+}
+.btn3{
+  padding: 0%;
+}
