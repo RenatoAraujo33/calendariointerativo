@@ -296,3 +296,11 @@ nav {
 .btn3{
   padding: 0%;
 }
+
+.btn-primary:hover {
+
+background-color: aliceblue !important;
+
+border: none;
+
+}
