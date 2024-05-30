@@ -13,10 +13,16 @@ if (!$conexao) {
     die("falha na conexão: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO tb_usuario VALUES (null,'11961523464','lune@gmail.com','senha')";
+//Recebendo dados do formulário
+$telefone = $_POST['Telefone'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+
+
+$sql = "INSERT INTO tb_usuario VALUES (null,'$telefone','$email','$senha')";
 
 if (mysqli_query($conexao, $sql)) {
-    echo "New record created sucessfully";
+    echo "<script> alert('Usuário cadastrado com sucesso'); location.href='../index.html'; </script>";
 
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conexao);

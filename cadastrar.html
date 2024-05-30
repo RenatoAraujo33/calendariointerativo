@@ -22,36 +22,30 @@
             <h2>Cadastrar</h2>
              <img src="logo.png" alt="" srcset="" />
           </div>
-          <form> 
+          <form action="PHP/insert_usuario.php" method="post"> 
             <div class="mb-3">
               <label for="inputNome" class="top form-label">Telefone</label>
               <input
-                type="text"
-                class="form-control"
-                id="inputNome"
-                aria-describedby="emailHelp"
+                type="text" class="form-control" id="inputNome" name="Telefone" aria-describedby="emailHelp"
               />
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="top form-label">E-mail</label
-              >
-              <input
-                type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+              <label for="exampleInputEmail1" class="top form-label">E-mail</label>
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
             </div>
           <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Senha</label>
               <div class="senha">
-             <input
-                type="password" class="form-control" id="exampleInputPassword1">
+             <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
                 <span class="icon">
                   <i id="mostrarSenha" class="fa-solid fa-eye-low-vision fa-sharp"></i>
                  </span> 
             </div> 
             </div>
             <div class="botao">
-              <a class="btn rosa btn-primary" href="index.html" role="button">
+              <button type="submit" class="btn rosa btn-primary" role="button">
                   Cadastrar-se
-              </a>
+              </button>
             </div>
             <a class="btn btn-outline-danger" href="index.html" role="button">Voltar</a>
           </form>
