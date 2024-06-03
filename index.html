@@ -16,18 +16,18 @@
         <div class="img">
           <img src="logo.png" alt="" srcset="">
         </div>
-        <form>
+        <form action="PHP/logon.php" method="post">
             <div class="col-s12">
               <label for="exampleInputEmail1" class=" top form-label">E-mail</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="col-s12">
               <label for="exampleInputPassword1" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" name="senha" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="botao">
         
-              <a class="btn rosa btnindex" href="calendario.html" role="button">Acessar</a>
+              <button type="submit" class="btn rosa btnindex" role="button">Acessar</button>
               <a class="btn btn2 btnindex" href="cadastrar.html" role="button">Cadastrar</a>
 
             </div>
