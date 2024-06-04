@@ -126,25 +126,26 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="PHP/insert_compromisso.php" method="post">
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Data:</label>
-            <input type="text" value="07/06/2024" class="form-control" id="recipient-name">
+            <input name="data" value="25/06/2024" type="text" class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Hora:</label>
-            <input type="time" class="form-control" id="recipient-name">
+            <input name="hora" type="time" class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Mensagem:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <textarea name="mensagem" class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Gravar</button>
           </div>
         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Gravar</button>
-      </div>
+    
     </div>
   </div>
 </div>
