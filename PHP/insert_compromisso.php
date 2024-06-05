@@ -16,6 +16,15 @@ if (!$conexao) {
 //Recebendo dados do formulário
 
 $data = $_POST['data'];
+$mes_array = explode("/", $data);//Separa nos espaços a string "data" e transforma em um array.
+$renatao = array_reverse($mes_array);
+ 
+$dia = $renatao['2'];
+$mes = $renatao['1'];
+$ano = $renatao['0'];
+ 
+$data = "$ano/$mes/$dia";
+
 $hora = $_POST['hora'];
 $mensagem = $_POST['mensagem'];
 $id_usuario = "1";
