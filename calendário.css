@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: #EEB3A3;
+  background: #bd98db;
   font-family: "Roboto", sans-serif;
 }
 
@@ -38,7 +38,7 @@ body {
   font-size: 20px;
 }
 .calendar {
-  background: white;
+  background: rgb(233, 225, 240);
   color: white;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -262,10 +262,8 @@ margin-top: 25px;
 
 }
 nav {
-
   position: sticky;
   bottom: 0;
-
 }
 
 .tarefas {
@@ -281,10 +279,16 @@ nav {
 .tarefas span {
   font-size: 10px;
 }
-.navbar {margin-top: 0%;}
+.navbar {margin-top: 0%;
+   background-color: rgb(76, 21, 124); 
+
+}
+
+
+
 
 .btn-primary{
-  background-color: white;
+  background-color: rgb(233, 225, 240);
   color: #0e0101;
   font-size: 18px;
   border: white;
@@ -299,7 +303,7 @@ nav {
 
 .btn-primary:hover {
 
-background-color: aliceblue !important;
+background-color: #EEB3A3 !important;
 
 border: none;
 
@@ -310,4 +314,8 @@ border: none;
   background-color: #967BAC;
   border: 2px solid;
 
+}
+
+.bg-body{
+  background-color: #967BAC;
 }

@@ -31,11 +31,11 @@ if (!$conexao) {
 }
 
 $select = "SELECT * FROM tb_compromisso";
-$query = mysqli_query($conexao,$select);
+$query = mysqli_query($conexao,$select);?>
+<div class="container" style="margin-top: 10%;">
+<div class="calendar" style="display:flex; flex-direction: column; align-items: center; gap: 10%;">
+ <h2 style="margin-top: 5%;color: #967BAC;">Compromissos Agendados</h2>  <?php
 while ($resultado = mysqli_fetch_array($query)) { ?>  
-  <div class="container">
-  <div class="calendar" style="display: flex; flex-direction: column; align-items: center; gap: 10%;">
-   <h2 style="margin-top: 5%;color: #967BAC;">Compromissos Agendados</h2>  
    <div class="card" style="width: 18rem;">
        <ul class="list-group list-group-flush">
          <li class="list-group-item">Data: <?php echo $resultado['dt_compromisso'] ?></li>
@@ -44,7 +44,7 @@ while ($resultado = mysqli_fetch_array($query)) { ?>
        </ul>
      </div>
 <?php } ?>
- 
+</div>
  <!-- inspired by http://colorhunt.co/c/8184 and 
     https://dribbble.com/shots/2407357-Calendar%60 -->
         <nav class="navbar bg-body-tertiary" style="width: 100%;">
@@ -63,7 +63,7 @@ while ($resultado = mysqli_fetch_array($query)) { ?>
             </a>
           </div>
         </nav>
-     </div>
+
       <!-- As a link -->
 
 
