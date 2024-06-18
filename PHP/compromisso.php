@@ -32,7 +32,7 @@ if (!$conexao) {
 
 $select = "SELECT * FROM tb_compromisso";
 $query = mysqli_query($conexao,$select);?>
-<div class="container" style="margin-top: 10%;">
+<div class="container">
 <div class="calendar" style="display:flex; flex-direction: column; align-items: center; gap: 10%;">
  <h2 style="margin-top: 5%;color: #967BAC;">Compromissos Agendados</h2>  <?php
 while ($resultado = mysqli_fetch_array($query)) { ?>  
