@@ -43,6 +43,7 @@ while ($resultado = mysqli_fetch_array($query)) { ?>
          <li class="list-group-item">Compromisso: <?php echo $resultado['mensagem'] ?></li>
        </ul>
      </div>
+     <span><i class="fa-regular fa-trash-can"></i></span>
 <?php } ?>
 </div>
  <!-- inspired by http://colorhunt.co/c/8184 and 
