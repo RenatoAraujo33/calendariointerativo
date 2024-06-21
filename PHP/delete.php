@@ -2,9 +2,9 @@
 
 $codigo = $_GET['cod'];
 
-$nomeServidor = "localhost";
-$nomeUsuario = "root"; //Usuário banco (root)
-$password = "root"; //Senha root MySQL
+$nomeServidor = "calendariointerativo.mysql.database.azure.com";
+$nomeUsuario = "renatoaraujo33"; //Usuário banco (root)
+$password = "etec@123"; //Senha root MySQL
 $nomeBanco = "db_calendario_interativo";
 $conexao = mysqli_connect($nomeServidor,$nomeUsuario, $password,$nomeBanco);
 
