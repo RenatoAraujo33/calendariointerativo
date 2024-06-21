@@ -16,9 +16,9 @@
 </head>
 <body> 
 <?php
-$nomeServidor = "calendariointerativo.mysql.database.azure.com";
-$nomeUsuario = "renatoaraujo33"; //Usuário banco (root)
-$password = "etec@123"; //Senha root MySQL
+$nomeServidor = "localhost";
+$nomeUsuario = "root"; //Usuário banco (root)
+$password = "root"; //Senha root MySQL
 $nomeBanco = "db_calendario_interativo";
 
 // A linha abaixo é o comando para se conectar no banco usando a função mysqli_connect
@@ -36,14 +36,19 @@ $query = mysqli_query($conexao,$select);?>
 <div class="calendar" style="display:flex; flex-direction: column; align-items: center; gap: 10%;">
  <h2 style="margin-top: 5%;color: #967BAC;">Compromissos Agendados</h2>  <?php
 while ($resultado = mysqli_fetch_array($query)) { ?>  
-   <div class="card" style="width: 18rem;">
+   <div class="car" style="display: flex;">
+   <div class="card" style="width: 18rem; margin-top: 5px">
        <ul class="list-group list-group-flush">
          <li class="list-group-item">Data: <?php echo $resultado['dt_compromisso'] ?></li>
          <li class="list-group-item">Hora: <?php echo $resultado['hr_compromisso'] ?></li>
          <li class="list-group-item">Compromisso: <?php echo $resultado['mensagem'] ?></li>
        </ul>
      </div>
-     <span><i class="fa-regular fa-trash-can"></i></span>
+     <div class="re" style="display: flex; flex-direction: column; margin-left: 3px; margin-top: 15px;">
+     <span><a href="delete.php?cod=<?php echo $resultado['id_compromisso']; ?> " style="margin-top: 0px"><i class="fa-regular fa-trash-can" style="margin-top: 0px; margin-left: 0px"></i></a></span>
+     <span><a href="check.php?cod=<?php echo $resultado['id_compromisso']; ?> "style="margin-top: 0px; background-color: green"><i class="fa-solid fa-check"></i></a></span>
+     </div>
+    </div>
 <?php } ?>
 </div>
  <!-- inspired by http://colorhunt.co/c/8184 and 

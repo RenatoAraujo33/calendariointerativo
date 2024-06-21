@@ -14,11 +14,12 @@ a {
 body,
 html {
   height: 100%;
+
 }
 
 body {
   background: #bd98db;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;  
 }
 
 .container {
