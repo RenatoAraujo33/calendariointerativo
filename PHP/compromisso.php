@@ -15,11 +15,17 @@
 
 </head>
 <body> 
+
 <?php
-$nomeServidor = "calendariointerativo.mysql.database.azure.com";
-$nomeUsuario = "renatoaraujo33"; //Usuário banco (root)
-$password = "etec@123"; //Senha root MySQL
-$nomeBanco = "db_calendario_interativo";
+    session_start();
+    if (isset( $_SESSION['user'])) {
+     $_id = $_SESSION['user'];
+    }
+    
+    $nomeServidor = "calendariointerativo.mysql.database.azure.com";
+    $nomeUsuario = "renatoaraujo33"; //Usuário banco (root)
+    $password = "etec@123"; //Senha root MySQL
+    $nomeBanco = "db_calendario_interativo";
 
 // A linha abaixo é o comando para se conectar no banco usando a função mysqli_connect
 
@@ -30,7 +36,7 @@ if (!$conexao) {
     die("falha na conexão: " . mysqli_connect_error());
 }
 
-$select = "SELECT * FROM tb_compromisso";
+$select = "SELECT * FROM tb_compromisso where fk_id_usuario = $_id";
 $query = mysqli_query($conexao,$select);?>
 <div class="container">
 <div class="calendar" style="display:flex; flex-direction: column; align-items: center; gap: 10%;">

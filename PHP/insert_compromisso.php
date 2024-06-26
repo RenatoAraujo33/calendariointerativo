@@ -4,6 +4,11 @@ $nomeUsuario = "renatoaraujo33"; //Usuário banco (root)
 $password = "etec@123"; //Senha root MySQL
 $nomeBanco = "db_calendario_interativo";
 
+session_start();
+if (isset( $_SESSION['user'])) {
+ $_id = $_SESSION['user'];
+}
+
 // A linha abaixo é o comando para se conectar no banco usando a função mysqli_connect
 
 $conexao = mysqli_connect($nomeServidor,$nomeUsuario, $password,$nomeBanco);
@@ -27,9 +32,9 @@ $data = "$ano/$mes/$dia";
 
 $hora = $_POST['hora'];
 $mensagem = $_POST['mensagem'];
-$id_usuario = "1";
 
-$sql = "INSERT INTO tb_compromisso VALUES (null,'$data','$hora','$mensagem','$id_usuario')";
+
+$sql = "INSERT INTO tb_compromisso VALUES (null,'$data','$hora','$mensagem','$_id')";
 
 if (mysqli_query($conexao, $sql)) {
     echo "<script> alert('Compromisso cadastrado com sucesso'); location.href='../calendario.html'; </script>";
