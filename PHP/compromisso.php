@@ -19,7 +19,7 @@
 <?php
 include 'conexao.php';
 
-$select = "SELECT * FROM tb_compromisso where fk_id_usuario = $_id";
+$select = "SELECT * FROM tb_compromisso";
 $query = mysqli_query($conexao,$select);?>
 <div class="container">
 <div class="calendar" style="display:flex; flex-direction: column; align-items: center; gap: 10%;">
