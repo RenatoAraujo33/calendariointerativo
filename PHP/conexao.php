@@ -1,10 +1,10 @@
 <?php
   
-  $nomeServidor = "calendariointerativo.mysql.database.azure.com";
-  $nomeUsuario = "renatoaraujo33"; //Usuário banco (root)
-  $password = "etec@123"; //Senha root MySQL
+  $nomeServidor = "localhost";
+  $nomeUsuario = "root"; //Usuário banco (root)
+  $password = "root"; //Senha root MySQL
   $nomeBanco = "db_calendario_interativo";
-  
+   
 // A linha abaixo é o comando para se conectar no banco usando a função mysqli_connect
 
 $conexao = mysqli_connect($nomeServidor,$nomeUsuario, $password,$nomeBanco);

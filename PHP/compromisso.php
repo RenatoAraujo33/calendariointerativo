@@ -12,7 +12,7 @@
   />
   <script src="https://kit.fontawesome.com/c0f408d1cc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../calendário.css ">
-
+    <link rel="icon" type="image/png" href="../logoIcon.png">
 </head>
 <body> 
 
