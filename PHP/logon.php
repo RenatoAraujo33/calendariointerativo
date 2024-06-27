@@ -26,8 +26,7 @@ $email_banco = $_resultado['email'];
 $senha_banco = $_resultado['senha'];
 
 if ($email == $email_banco && $senha == $senha_banco) {
-    $_SESSION['user'] = $_resultado['id_usuario'];
-    header('location: ../calendario.html');
+      header('location: ../calendario.html');
 } else {
     echo "<script> alert('Usuário ou senha inválida'); location.href='../index.html'; </script>";
 }
