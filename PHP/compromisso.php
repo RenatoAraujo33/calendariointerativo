@@ -17,24 +17,7 @@
 <body> 
 
 <?php
-    session_start();
-    if (isset( $_SESSION['user'])) {
-     $_id = $_SESSION['user'];
-    }
-    
-    $nomeServidor = "calendariointerativo.mysql.database.azure.com";
-    $nomeUsuario = "renatoaraujo33"; //Usuário banco (root)
-    $password = "etec@123"; //Senha root MySQL
-    $nomeBanco = "db_calendario_interativo";
-
-// A linha abaixo é o comando para se conectar no banco usando a função mysqli_connect
-
-$conexao = mysqli_connect($nomeServidor,$nomeUsuario, $password,$nomeBanco);
-
-// Esse comando é para verificar se a conexão foi feita com sucesso
-if (!$conexao) {
-    die("falha na conexão: " . mysqli_connect_error());
-}
+include 'conexao.php';
 
 $select = "SELECT * FROM tb_compromisso where fk_id_usuario = $_id";
 $query = mysqli_query($conexao,$select);?>
