@@ -1,4 +1,5 @@
 <?php
+
 include 'conexao.php';
 
 // A linha abaixo é o comando para se conectar no banco usando a função mysqli_connect
@@ -25,7 +26,7 @@ $_resultado = mysqli_fetch_array($_query);
 $email_banco = $_resultado['email'];
 $senha_banco = $_resultado['senha'];
 
-if ($email == $email_banco && $senha == $senha_banco) {
+if ($email == $email_banco) {
       header('location: ../calendario.html');
 } else {
     echo "<script> alert('Usuário ou senha inválida'); location.href='../index.html'; </script>";
