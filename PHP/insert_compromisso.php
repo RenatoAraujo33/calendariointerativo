@@ -30,7 +30,7 @@ $hora = $_POST['hora'];
 $mensagem = $_POST['mensagem'];
 
 
-$sql = "INSERT INTO tb_compromisso VALUES (null,'$data','$hora','$mensagem','$_id')";
+$sql = "INSERT INTO tb_compromisso VALUES (null,'$data','$hora','$mensagem','1')";
 
 if (mysqli_query($conexao, $sql)) {
     echo "<script> alert('Compromisso cadastrado com sucesso'); location.href='../calendario.html'; </script>";
